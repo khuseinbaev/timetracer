@@ -1,0 +1,48 @@
+.timer-form-field {
+  width: 100%;
+}
+
+.add-table {
+  td {
+    padding: 0 10px;
+  }
+
+  .add-input {
+    min-width: 300px;
+    width: 300px;
+  }
+
+  .add-button {
+    text-align: center;
+  }
+}
+
+.select-form-field {
+  padding-bottom: 5px;
+}
+
+.select-button {
+  width: 100%;
+
+  mat-icon {
+    color: #4ac800;
+    margin-right: 0px !important;
+  }
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+mat-card {
+  margin-top: 20px;
+}
+
+td {
+  word-wrap: break-word;
+}

@@ -1,0 +1,21 @@
+form {
+  padding: 0 16px;
+
+  .login-form-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-form-field > * {
+    width: 100%;
+  }
+
+  .login-action {
+    margin: 21px 0 0 0;
+
+    button {
+      width: 100%;
+    }
+  }
+
+}

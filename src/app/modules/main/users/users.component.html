@@ -1,0 +1,36 @@
+<mat-card>
+  <mat-card-content>
+
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Photo</th>
+        <th>Name</th>
+        <th>Provider</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Creating Account</th>
+        <th>Last Sign In</th>
+        <th>Email Verified</th>
+        <th>Is Admin</th>
+      </tr>
+      </thead>
+      <tbody *ngFor="let user of users | async">
+      <tr>
+        <td><img src="{{user.photoURL}}" width="36px"></td>
+        <td>{{user.displayName}}</td>
+        <td>{{user.providerId}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phoneNumber}}</td>
+        <td>{{user.creationTime}}</td>
+        <td>{{user.lastSignInTime}}</td>
+        <td>{{user.emailVerified}}</td>
+        <td>
+          <mat-checkbox class="example-margin" [checked]="user.roles.roleAdmin"
+               [(ngModel)]="checked[user.uid]"        (change)="changeAdmin(user.uid)"></mat-checkbox>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </mat-card-content>
+</mat-card>

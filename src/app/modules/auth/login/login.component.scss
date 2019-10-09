@@ -1,0 +1,31 @@
+form {
+  padding: 0 16px;
+
+  .login-form-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-form-field > * {
+    width: 100%;
+  }
+
+  .login-action {
+    margin-top: 21px;
+
+    a {
+      float: left;
+      color: lightgrey;
+      font-weight: normal;
+      padding: 0;
+    }
+    a:hover{
+      color: #4a5df2;
+    }
+
+    button {
+      float: right;
+    }
+  }
+
+}

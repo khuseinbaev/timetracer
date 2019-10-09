@@ -1,0 +1,25 @@
+<form [formGroup]="registerForm" (submit)="register()">
+
+  <p class="login-form-field">
+    <mat-form-field>
+      <input matInput placeholder="Enter your email" formControlName="email">
+      <mat-error *ngIf="formControls.email.invalid">Enter proper Email</mat-error>
+    </mat-form-field>
+  </p>
+
+  <p class="login-form-field">
+    <mat-form-field>
+      <input matInput placeholder="Enter your password" formControlName="password"
+             [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+      <mat-error *ngIf="formControls.password.invalid">Password is required</mat-error>
+    </mat-form-field>
+  </p>
+
+  <p class="login-action">
+    <button mat-raised-button color="primary">Create Account</button>
+  </p>
+</form>

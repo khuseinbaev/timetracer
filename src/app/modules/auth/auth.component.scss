@@ -1,0 +1,97 @@
+.login-div h1 {
+  margin-top: 20px;
+  text-align: center;
+  white-space: pre;
+}
+
+.login-card {
+  width: 700px;
+  margin: 16px auto;
+  padding-bottom: 31px;
+  background-image: url("../../../assets/images/border.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+
+  .row {
+    width: 100%;
+    margin: 0;
+
+    .title-in {
+      padding-left: 31px;
+      margin-top: 10px;
+    }
+
+    .title-up {
+      padding: 0 43px;
+      margin-top: 10px;
+      vertical-align: middle;
+
+      a {
+        text-align: right;
+        color: #929292;
+        width: 100%
+      }
+
+      a:hover{
+        color: #4a5df2;
+      }
+    }
+
+    mat-list {
+      padding: 0 12px;
+      height: 100%;
+
+      .middle-out {
+        display: table;
+        width: 100%;
+        height: 100%;
+
+        .middle-in {
+          vertical-align: middle;
+          display: table-cell;
+        }
+      }
+
+      .icon {
+        padding-left: 5px;
+        width: 100%;
+        vertical-align: middle;
+        text-align: left;
+
+        img {
+          width: 30px;
+          float: left;
+          margin: 3px 10px 0 0;
+        }
+      }
+
+      .icon-google {
+        color: dimgrey;
+      }
+
+      .icon-facebook {
+        //background-color: rgb(3,155,229);
+        background-color: rgb(66, 103, 178);
+        color: #fff;
+      }
+
+      .icon-microsoft {
+        img {
+          width: 24px;
+          margin: 6px 13px 2px 3px;
+        }
+      }
+
+      .icon-github {
+        background-color: rgb(52, 52, 52);
+        color: #fff;
+
+        img {
+          width: 26px;
+          margin: 4px 11px 2px 3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.title-button {
+  float: right;
+  margin-left: 45px;
+
+  mat-icon {
+    margin-bottom: 21px;
+  }
+}
+
+.action-button {
+  width: 100%;
+  color: #fff;
+  background: #4ac800;
+}
+
+mat-dialog-content mat-form-field {
+  width: 100%;
+}
+
+form {
+  min-width: 255px;
+}

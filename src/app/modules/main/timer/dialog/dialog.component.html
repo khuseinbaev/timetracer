@@ -1,0 +1,21 @@
+<form [formGroup]="dialogForm">
+  <h2 mat-dialog-title>
+    <span>Create new project</span>
+    <button mat-icon-button (click)="close()" class="title-button" [disableRipple]="true">
+      <mat-icon color="warn">cancel</mat-icon>
+    </button>
+  </h2>
+
+  <mat-dialog-content>
+    <mat-form-field>
+      <input matInput formControlName="name" placeholder="Project name" (ngModelChange)="setValue()" >
+      <mat-error *ngIf="dialogForm.controls.name.invalid">Project name is required</mat-error>
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-raised-button class="action-button" [mat-dialog-close]="data"
+            [disabled]="dialogForm.controls.name.invalid">Create project
+    </button>
+  </mat-dialog-actions>
+</form>

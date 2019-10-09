@@ -1,0 +1,50 @@
+<div class="login-div">
+  <h1>Time Tracer</h1>
+  <mat-card class="login-card">
+    <mat-card-content>
+      <div class="row">
+        <div class="col-6 mat-h2 title-in">{{data.getTitle()[0]}}</div>
+        <div class="col-6 title-up">
+          <a mat-button routerLink="{{data.getTitle()[2]}}">{{data.getTitle()[1]}}</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="col-6">
+          <mat-list role="list">
+            <div class="middle-out">
+              <div class="middle-in">
+                <mat-list-item role="listitem">
+                  <button mat-raised-button class="icon icon-google mat-elevation-z8"
+                          (click)="authService.googleLogin()">
+                    <img src="assets/images/google.png"> Continue with Google
+                  </button>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <button mat-raised-button class="icon icon-microsoft mat-elevation-z8"
+                          (click)="authService.microsoftLogin()">
+                    <img src="assets/images/microsoft.png"> Continue with Microsoft
+                  </button>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <button mat-raised-button class="icon icon-facebook mat-elevation-z8"
+                          (click)="authService.facebookLogin()">
+                    <img src="assets/images/facebook.png"> Continue with Facebook
+                  </button>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <button mat-raised-button class="icon icon-github mat-elevation-z8"
+                          (click)="authService.githubLogin()">
+                    <img src="assets/images/github.png"> Continue with GitHub
+                  </button>
+                </mat-list-item>
+              </div>
+            </div>
+          </mat-list>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
